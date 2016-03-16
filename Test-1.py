@@ -69,8 +69,8 @@ sets = [set()] * lendbflist  # нашли пересечение множест�
 i = 0  # cчетчик множеств в метамножестве
 #for name in dbflist:
 
-
-for sn in selected_files: print(compl.get(sn))
+dbflist.clear() #
+for sn in selected_files: dbflist.add(compl.get(sn))
 
 for name in dbflist:
     
